@@ -21,7 +21,7 @@ function fuelCalc() {
     }
   }
 }
-// fuelCalc();
+fuelCalc();
 // Депозитний калькулятор
 function depoditCalc() {
   const sumInput = document.querySelector("#sum");
@@ -47,7 +47,7 @@ function depoditCalc() {
   }
 }
 
-depoditCalc();
+// depoditCalc();
 // fetch("https://bank.gov.ua/NBUStatService/v1/statdirectory/exchangenew?json")
 //   .then((data) => data.json())
 //   .then((res) => console.log(res));
