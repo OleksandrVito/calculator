@@ -101,8 +101,8 @@ h1 {
 a {
   background: url("plus.png") 10px 10px / 20px 20px;
   background-repeat: no-repeat;
-
   margin: 5px;
+  /* margin-right: 35px; */
 }
 
 a:active {
@@ -133,7 +133,7 @@ a:active {
   transform: rotate(90deg);
 }
 #menu__toggle:checked ~ .menu__box {
-  left: 0 !important;
+  left: -20px !important;
 }
 .menu__btn {
   position: absolute;
@@ -172,6 +172,8 @@ a:active {
   height: 500px;
   margin: 0;
   padding: 70px 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
   list-style: none;
   background-color: #3d4142;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
@@ -180,8 +182,8 @@ a:active {
 .menu__item {
   display: block;
   padding: 12px 36px;
+  /* padding-right: 15px; */
   color: #3d4142;
-
   background-color: rgba(207, 216, 220, 0.8);
   text-decoration: none;
   transition-duration: 0.25s;
@@ -208,9 +210,9 @@ a:active {
     height: 100vh;
   }
   .menu__box {
-    width: 92vw;
+    width: 100vw;
     height: 100vh;
-    left: -3900%;
+    left: -110vw;
   }
   body {
     padding: 0;
