@@ -5,13 +5,14 @@ body {
 }
 
 #result {
-  width: 200px;
-  height: 50px;
+  /* width: 200px; */
+  /* height: 50px; */
   box-sizing: border-box;
   border: solid 1px #505455;
   text-align: left;
   padding-top: 10px;
   padding-left: 5px;
+  padding-bottom: 10px;
   line-height: 20px;
 }
 
@@ -91,7 +92,8 @@ label {
 /* Menu */
 .title {
   position: relative;
-  padding-top: 5px;
+  padding-top: 50px;
+  padding-left: 0px;
   padding-bottom: 15px;
 }
 h1 {
@@ -150,7 +152,7 @@ a:active {
 .menu__btn > span::after {
   display: block;
   position: absolute;
-  width: 100%;
+  width: 40px;
   height: 3px;
   background-color: #ff595a;
   transition-duration: 0.25s;
@@ -194,7 +196,8 @@ a:active {
 
 @media (max-width: 768px) {
   body {
-    background: red;
+    background-color: #3d4142;
+    /* height: 100vh */
   }
 
   .block {
@@ -207,7 +210,7 @@ a:active {
 
   .container {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
   }
   .menu__box {
     width: 100vw;
@@ -220,8 +223,5 @@ a:active {
   }
   .menu__btn {
     display: block;
-  }
-  .title {
-    padding-top: 50px;
   }
 }
