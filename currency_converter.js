@@ -5,7 +5,7 @@ function currencyConvert() {
   const fromCurrencyInput = document.querySelector("#fromCurrency");
   const tourrencyInput = document.querySelector("#toCurrency");
 
-  fetch("https://bank.gov.ua/NBUStatService/v1/statdirectory/exchangenew?json")
+  fetch("https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json")
     .then((data) => data.json())
     .then((res) => {
       console.log(res);
@@ -69,3 +69,22 @@ function currencyConvert() {
 }
 
 currencyConvert();
+const myHeaders = new Headers();
+
+const myInit = {
+  method: "GET",
+  // headers: myHeaders,
+  mode: "no-cors",
+  // cache: "default",
+};
+
+fetch("https://bank.gov.ua/NBUStatService/v1/statdirectory/exchangenew?json")
+  .then((blob) => blob.json())
+  .then((data) => {
+    console.table(data);
+    return data;
+  })
+  .catch((e) => {
+    console.log(e);
+    return e;
+  });
