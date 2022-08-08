@@ -65,6 +65,33 @@ label {
   box-sizing: border-box;
 }
 
+[data-currency] {
+  flex-direction: column;
+}
+.currency_block {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.currency_block input {
+  width: 100%;
+}
+
+select {
+  width: 50%;
+  font-family: monospace;
+  background-color: rgba(141, 149, 151, 0.9);
+  color: #3d4142;
+  outline: none;
+  font-weight: 600;
+}
+
+.info {
+  font-size: 14px;
+  font-weight: 500;
+}
+
 .radio-block {
   flex-direction: row;
   justify-content: space-between;
@@ -104,10 +131,9 @@ a {
   background: url("plus.png") 10px 10px / 20px 20px;
   background-repeat: no-repeat;
   margin: 5px;
-  /* margin-right: 35px; */
 }
 
-a:active {
+a:hover {
   background: url("minus.png") 10px 10px / 20px 20px;
   background-repeat: no-repeat;
 }
@@ -203,8 +229,12 @@ a:active {
   .block {
     flex-direction: column;
   }
-  label,
-  input {
+  .currency_block {
+    width: 100%;
+  }
+
+  input,
+  label {
     width: 100%;
   }
 

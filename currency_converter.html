@@ -27,7 +27,7 @@
                 >Калькулятор витрат палива</a
               >
             </li>
-            <li>
+            <li id="currencyConverter">
               <a class="menu__item" href="currency_converter.html"
                 >Конвертер валют</a
               >
@@ -35,26 +35,25 @@
           </ul>
         </div>
       </div>
-      <div class="block">
-        <label>Дистанція, км</label>
-        <input type="number" id="distance" />
+      <div class="block" data-currency>
+        <label>З валюти:</label>
+        <div class="currency_block">
+          <input type="number" id="fromCurrency" />
+          <select value=""></select>
+        </div>
       </div>
 
       <hr />
-      <div class="block">
-        <label>Розхід, л на 100 км</label>
-        <input type="number" id="efficiency" />
-      </div>
-
-      <hr />
-      <div class="block">
-        <label>Ціна, грн за 1 л</label>
-        <input type="number" id="price" />
+      <div class="block" data-currency>
+        <label>У валюту:</label>
+        <div class="currency_block">
+          <input type="number" id="toCurrency" />
+          <select value=""></select>
+        </div>
       </div>
       <hr />
-      <p>Результат</p>
-      <div id="result"></div>
+      <span class="info">* згідно курсу НБУ станом на 25.08.2022</span>
     </div>
-    <script src="index.js"></script>
+    <script src="currency_converter.js"></script>
   </body>
 </html>

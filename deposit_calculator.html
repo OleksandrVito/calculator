@@ -46,19 +46,12 @@
       </div>
       <hr />
       <div class="block">
-        <label for="date">Дата початку</label>
-        <input type="date" id="date" />
-      </div>
-      <hr />
-      <div class="block">
         <label for="term">Строк внеску, міс.</label>
         <input type="number" id="term" />
       </div>
       <hr />
       <div class="block">
-        <label for="replenishment"
-          >Сума ругелярного поповнення (щомісяця), грн.</label
-        >
+        <label for="replenishment">Щомісячне поповнення, грн.</label>
         <input type="number" id="replenishment" />
       </div>
       <hr />
@@ -79,7 +72,12 @@
       <hr />
       <p>Результат</p>
       <div id="result"></div>
+      <span class="info">* Щомісячне поповнення з 1 числа 2 місяця</span>
+      <br />
+      <span class="info"
+        >* Для розрахунку тривалість місяців вважається однаковою</span
+      >
     </div>
-    <script src="index.js"></script>
+    <script src="deposit_calculator.js"></script>
   </body>
 </html>
