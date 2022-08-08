@@ -80,6 +80,8 @@ label {
 
 select {
   width: 50%;
+  height: 30px;
+  border-radius: 0;
   font-family: monospace;
   background-color: rgba(141, 149, 151, 0.9);
   color: #3d4142;
