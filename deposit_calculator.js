@@ -50,9 +50,9 @@ function depositCalc() {
     };
 
     // console.log(profit);
-    resultOutnput.textContent = `Ваші дохід після сплати податків: ${resSum(
-      sum
-    )} грн. Ваші накопичення: ${resProfit(profit)} грн.`;
+    resultOutnput.textContent = `Ваші дохід після сплати податків: ${resProfit(
+      profit
+    )} грн. Ваші накопичення: ${resSum(sum)} грн.`;
   }
 }
 
